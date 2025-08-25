@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  text-align: center; /* Align inline-block elements */
+}
+
+/* Photo Container */
+.photo {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+/* Image Styling */
+.photo img {
+  width: 100%;
+  border: 3px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Responsive Layout ===== */
+
+/* Tablets: 2 columns */
+@media (min-width: 600px) {
+  .photo {
+    width: 48%;
+  }
+}
+
+/* Desktops: 3 columns */
+@media (min-width: 900px) {
+  .photo {
+    width: 30%;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
